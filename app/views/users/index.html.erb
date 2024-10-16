@@ -1,0 +1,7 @@
+<% @users.each do |e| %>
+  uid: <%= e.uid %>, pass: <%= e.pass %><br>
+<% end %>
+
+<%= link_to "新規追加", new_user_path %>
+
+<%= link_to "ログイン", root_path %>
